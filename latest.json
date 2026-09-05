@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 2,
+  "label": "parity",
+  "message": "68%",
+  "color": "red",
+  "profile": "full",
+  "status": "failing",
+  "passRate": 68.0,
+  "totalScenarios": 50,
+  "passedScenarios": 28,
+  "skippedScenarios": 6,
+  "failedScenarios": 16,
+  "warningOnlyScenarios": 2,
+  "generatedAtUtc": "2026-09-05T06:57:52.3393107Z",
+  "repository": "ikvm/SonnetDB",
+  "runId": "33951005233",
+  "runNumber": "42",
+  "commitSha": "775b187273a610a47e25cbd584f1eeecc19e2292",
+  "badgeUrl": "https://img.shields.io/badge/parity-68%25-red",
+  "suites": [
+    {
+      "suite": "analytics-fafafb1b",
+      "total": 5,
+      "passed": 0,
+      "skipped": 5,
+      "failed": 0,
+      "source": "./artifacts/parity/full/raw/analytics-fafafb1b/report.json"
+    },
+    {
+      "suite": "document-3a452675",
+      "total": 5,
+      "passed": 5,
+      "skipped": 0,
+      "failed": 0,
+      "source": "./artifacts/parity/full/raw/document-3a452675/report.json"
+    },
+    {
+      "suite": "fulltext-974f2dc4",
+      "total": 6,
+      "passed": 0,
+      "skipped": 0,
+      "failed": 6,
+      "source": "./artifacts/parity/full/raw/fulltext-974f2dc4/report.json"
+    },
+    {
+      "suite": "kv-0d79c64b",
+      "total": 5,
+      "passed": 5,
+      "skipped": 0,
+      "failed": 0,
+      "source": "./artifacts/parity/full/raw/kv-0d79c64b/report.json"
+    },
+    {
+      "suite": "mq-87d41668",
+      "total": 5,
+      "passed": 5,
+      "skipped": 0,
+      "failed": 0,
+      "source": "./artifacts/parity/full/raw/mq-87d41668/report.json"
+    },
+    {
+      "suite": "object-f5713cab",
+      "total": 5,
+      "passed": 5,
+      "skipped": 0,
+      "failed": 0,
+      "source": "./artifacts/parity/full/raw/object-f5713cab/report.json"
+    },
+    {
+      "suite": "relational-1b2d48b9",
+      "total": 9,
+      "passed": 8,
+      "skipped": 1,
+      "failed": 0,
+      "source": "./artifacts/parity/full/raw/relational-1b2d48b9/report.json"
+    },
+    {
+      "suite": "tsdb-a8f1490e",
+      "total": 7,
+      "passed": 0,
+      "skipped": 0,
+      "failed": 7,
+      "source": "./artifacts/parity/full/raw/tsdb-a8f1490e/report.json"
+    },
+    {
+      "suite": "vector-fa46233b",
+      "total": 3,
+      "passed": 0,
+      "skipped": 0,
+      "failed": 3,
+      "source": "./artifacts/parity/full/raw/vector-fa46233b/report.json"
+    }
+  ],
+  "gateFailures": [
+    {
+      "gate": "accuracy",
+      "suite": "fulltext-974f2dc4",
+      "scenario": "index_1m_documents",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "fulltext-974f2dc4",
+      "scenario": "bm25_ranking_top10_overlap",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "fulltext-974f2dc4",
+      "scenario": "cjk_tokenize_correctness",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "fulltext-974f2dc4",
+      "scenario": "facet_filter_query",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "fulltext-974f2dc4",
+      "scenario": "incremental_update_during_query",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "fulltext-974f2dc4",
+      "scenario": "typo_tolerant_query",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "capability",
+      "suite": "tsdb-a8f1490e",
+      "scenario": "ingest_1m_points",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "tsdb-a8f1490e",
+      "scenario": "groupby_time_window",
+      "reason": "victoriametrics: row count mismatch: expected 2, actual 0",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "tsdb-a8f1490e",
+      "scenario": "derivative_accuracy",
+      "reason": "influxdb: row count mismatch: expected 30, actual 29; victoriametrics: row count mismatch: expected 30, actual 0",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "tsdb-a8f1490e",
+      "scenario": "rate_irate_consistency",
+      "reason": "influxdb: row count mismatch: expected 30, actual 29; victoriametrics: row count mismatch: expected 30, actual 0",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "tsdb-a8f1490e",
+      "scenario": "holt_winters_forecast_recall",
+      "reason": "influxdb: row 0 column 0 (time) mismatch: expected '1704067280000', actual '0'; influxdb: row 1 column 0 (time) mismatch: expected '1704067281000', actual '1'; influxdb: row 2 column 0 (time) mismatch: expected '1704067282000', actual '2'; influxdb: row 3 column 0 (time) mismatch: expected '1704067283000', actual '3'; influxdb: row 4 column 0 (time) mismatch: expected '1704067284000', actual '4'; influxdb: row 5 column 0 (time) mismatch: expected '1704067285000', actual '5'",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "tsdb-a8f1490e",
+      "scenario": "percentile_p95_tdigest_vs_quantile",
+      "reason": "victoriametrics: row 0 column 0 (percentile) mismatch: expected '94.06', actual '0'",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "tsdb-a8f1490e",
+      "scenario": "distinct_count_hll_2pct_error",
+      "reason": "victoriametrics: row 0 column 0 (distinct_count(value)) mismatch: expected '503', actual '0'",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "capability",
+      "suite": "vector-fa46233b",
+      "scenario": "ann_recall_at_10",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "accuracy",
+      "suite": "vector-fa46233b",
+      "scenario": "filtered_search",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "capability",
+      "suite": "vector-fa46233b",
+      "scenario": "upsert_during_query",
+      "reason": "backend reported fail",
+      "gap_reason": "scenario_failed"
+    },
+    {
+      "gate": "capability",
+      "suite": "dotnet-test",
+      "scenario": "parity",
+      "reason": "dotnet test exited with code 1",
+      "gap_reason": "parity_test_failed"
+    }
+  ],
+  "performanceWarnings": [
+    {
+      "suite": "analytics-fafafb1b",
+      "scenario": "groupby_time_1b_rows_wallclock",
+      "reason": "performance metrics are warning only"
+    },
+    {
+      "suite": "analytics-fafafb1b",
+      "scenario": "columnar_compression_ratio",
+      "reason": "performance metrics are warning only"
+    }
+  ]
+}

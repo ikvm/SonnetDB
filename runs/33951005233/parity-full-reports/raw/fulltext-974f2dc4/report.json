@@ -1,0 +1,210 @@
+{
+  "runId": "fulltext-974f2dc4",
+  "startedAtUtc": "2026-09-05T06:56:58.2226094+00:00",
+  "scenarios": [
+    {
+      "name": "index_1m_documents",
+      "differences": [],
+      "backends": [
+        {
+          "backend": "sonnetdb",
+          "status": "pass",
+          "rowCount": 1,
+          "metrics": {
+            "row_count": 1,
+            "documents": 5000,
+            "elapsed_ms": 24962.043,
+            "documents_per_second": 200.30411773587602,
+            "full_1m_enabled": false
+          }
+        },
+        {
+          "backend": "meilisearch",
+          "status": "fail",
+          "rowCount": 0,
+          "metrics": {
+            "exception_type": "InvalidOperationException",
+            "exception_message": "Meilisearch task 0 failed: Index \u0060p133_fulltext_974f2dc4_index\u0060 not found."
+          }
+        }
+      ]
+    },
+    {
+      "name": "bm25_ranking_top10_overlap",
+      "differences": [],
+      "backends": [
+        {
+          "backend": "sonnetdb",
+          "status": "pass",
+          "rowCount": 1,
+          "metrics": {
+            "row_count": 1,
+            "top10_overlap": 1,
+            "documents": 2000
+          }
+        },
+        {
+          "backend": "meilisearch",
+          "status": "fail",
+          "rowCount": 0,
+          "metrics": {
+            "exception_type": "InvalidOperationException",
+            "exception_message": "Meilisearch task 1 failed: Index \u0060p133_fulltext_974f2dc4_bm25\u0060 not found."
+          }
+        }
+      ]
+    },
+    {
+      "name": "cjk_tokenize_correctness",
+      "differences": [],
+      "backends": [
+        {
+          "backend": "sonnetdb",
+          "status": "pass",
+          "rowCount": 1,
+          "metrics": {
+            "row_count": 1
+          }
+        },
+        {
+          "backend": "meilisearch",
+          "status": "fail",
+          "rowCount": 0,
+          "metrics": {
+            "exception_type": "InvalidOperationException",
+            "exception_message": "Meilisearch task 2 failed: Index \u0060p133_fulltext_974f2dc4_cjk\u0060 not found."
+          }
+        }
+      ]
+    },
+    {
+      "name": "facet_filter_query",
+      "differences": [],
+      "backends": [
+        {
+          "backend": "sonnetdb",
+          "status": "pass",
+          "rowCount": 1,
+          "metrics": {
+            "row_count": 1
+          }
+        },
+        {
+          "backend": "meilisearch",
+          "status": "fail",
+          "rowCount": 0,
+          "metrics": {
+            "exception_type": "InvalidOperationException",
+            "exception_message": "Meilisearch task 3 failed: Index \u0060p133_fulltext_974f2dc4_facet\u0060 not found."
+          }
+        }
+      ]
+    },
+    {
+      "name": "incremental_update_during_query",
+      "differences": [],
+      "backends": [
+        {
+          "backend": "sonnetdb",
+          "status": "pass",
+          "rowCount": 1,
+          "metrics": {
+            "row_count": 1
+          }
+        },
+        {
+          "backend": "meilisearch",
+          "status": "fail",
+          "rowCount": 0,
+          "metrics": {
+            "exception_type": "InvalidOperationException",
+            "exception_message": "Meilisearch task 4 failed: Index \u0060p133_fulltext_974f2dc4_update\u0060 not found."
+          }
+        }
+      ]
+    },
+    {
+      "name": "typo_tolerant_query",
+      "differences": [],
+      "backends": [
+        {
+          "backend": "sonnetdb",
+          "status": "pass",
+          "rowCount": 1,
+          "metrics": {
+            "row_count": 1
+          }
+        },
+        {
+          "backend": "meilisearch",
+          "status": "fail",
+          "rowCount": 0,
+          "metrics": {
+            "exception_type": "InvalidOperationException",
+            "exception_message": "Meilisearch task 5 failed: Index \u0060p133_fulltext_974f2dc4_typo\u0060 not found."
+          }
+        }
+      ]
+    }
+  ],
+  "capabilityGaps": [
+    {
+      "scenario": "index_1m_documents",
+      "required": "Fulltext",
+      "sonnetDb": "pass",
+      "backendStatuses": {
+        "sonnetdb": "pass",
+        "meilisearch": "fail"
+      }
+    },
+    {
+      "scenario": "bm25_ranking_top10_overlap",
+      "required": "Fulltext",
+      "sonnetDb": "pass",
+      "backendStatuses": {
+        "sonnetdb": "pass",
+        "meilisearch": "fail"
+      }
+    },
+    {
+      "scenario": "cjk_tokenize_correctness",
+      "required": "Fulltext, FulltextCjk",
+      "sonnetDb": "pass",
+      "backendStatuses": {
+        "sonnetdb": "pass",
+        "meilisearch": "fail"
+      }
+    },
+    {
+      "scenario": "facet_filter_query",
+      "required": "Fulltext, FulltextFacetFilter",
+      "sonnetDb": "pass",
+      "backendStatuses": {
+        "sonnetdb": "pass",
+        "meilisearch": "fail"
+      }
+    },
+    {
+      "scenario": "incremental_update_during_query",
+      "required": "Fulltext",
+      "sonnetDb": "pass",
+      "backendStatuses": {
+        "sonnetdb": "pass",
+        "meilisearch": "fail"
+      }
+    },
+    {
+      "scenario": "typo_tolerant_query",
+      "required": "Fulltext, FulltextTypoTolerant",
+      "sonnetDb": "pass",
+      "backendStatuses": {
+        "sonnetdb": "pass",
+        "meilisearch": "fail"
+      }
+    }
+  ],
+  "backends": [
+    "sonnetdb",
+    "meilisearch"
+  ]
+}
