@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="530b3598-085c-4091-8e9c-4c11030d495a" name="@runnervm8df0l 2026-10-03 07:56:12" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-03T07:56:12.4098137+00:00" queuing="2026-10-03T07:56:12.4098138+00:00" start="2026-10-03T07:56:10.6739430+00:00" finish="2026-10-03T07:56:14.0298198+00:00" />
+  <TestSettings name="default" id="871e6a3c-3631-4acb-bb1e-d6e652ae2bc5">
+    <Deployment runDeploymentRoot="_runnervm8df0l_2026-10-03_07_56_12" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="b0994638-b5db-4e2c-9777-d5ccafbe3652" testId="719ee9c2-b843-29cb-bb45-ddae30178768" testName="SonnetDB.CrashTests.CrashReliabilityTests.power_loss_half_renamed_segment_PendingReplacementIsIgnoredOnReopen" computerName="runnervm8df0l" duration="00:00:00.1791401" startTime="2026-10-03T07:56:11.1579230+00:00" endTime="2026-10-03T07:56:11.3458060+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0994638-b5db-4e2c-9777-d5ccafbe3652" />
+    <UnitTestResult executionId="5543af66-1205-4a1b-ac6f-be2ba4afabfb" testId="9150857f-c4e4-07c5-0035-9fdc417b3556" testName="SonnetDB.CrashTests.CrashReliabilityTests.disk_full_during_wal_append_PreservesPreviouslySyncedRecords" computerName="runnervm8df0l" duration="00:00:00.0189148" startTime="2026-10-03T07:56:13.3560640+00:00" endTime="2026-10-03T07:56:13.3749255+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5543af66-1205-4a1b-ac6f-be2ba4afabfb" />
+    <UnitTestResult executionId="4a2a1922-929e-4759-86c5-3d90a602238f" testId="939f4755-8654-694a-aa27-8a1c688f8ed8" testName="SonnetDB.CrashTests.CrashReliabilityTests.crash_kill9_os_flushed_writes_AckedWritesSurviveProcessCrash" computerName="runnervm8df0l" duration="00:00:00.4493881" startTime="2026-10-03T07:56:12.9067301+00:00" endTime="2026-10-03T07:56:13.3559036+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a2a1922-929e-4759-86c5-3d90a602238f" />
+    <UnitTestResult executionId="7719874a-6c44-4c22-896d-e53a8bb4181f" testId="cbacb637-f33d-723f-1062-c8637f0fe42b" testName="SonnetDB.CrashTests.CrashReliabilityTests.crash_kill9_during_fsync_ReopenReplaysOnlyValidWalRecords" computerName="runnervm8df0l" duration="00:00:00.6049672" startTime="2026-10-03T07:56:13.3750580+00:00" endTime="2026-10-03T07:56:13.9800402+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7719874a-6c44-4c22-896d-e53a8bb4181f" />
+    <UnitTestResult executionId="d56a45d5-3e9d-4690-865a-fa60cdf88c53" testId="0f349738-363a-8ef0-8a25-a36953b9592a" testName="SonnetDB.CrashTests.CrashReliabilityTests.crash_kill9_mid_compaction_ReopenDoesNotDuplicateCommittedSegments" computerName="runnervm8df0l" duration="00:00:00.8978038" startTime="2026-10-03T07:56:11.9659343+00:00" endTime="2026-10-03T07:56:12.8637231+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d56a45d5-3e9d-4690-865a-fa60cdf88c53" />
+    <UnitTestResult executionId="fb7f68ae-c5ed-466a-8518-db6ec3862d3c" testId="3ed8f3c2-3284-1a28-63f1-358738d5a81d" testName="SonnetDB.CrashTests.CrashReliabilityTests.oom_protection_memtable_backpressure_HardCapFlushesBeforeUnboundedGrowth" computerName="runnervm8df0l" duration="00:00:00.1117181" startTime="2026-10-03T07:56:11.8546723+00:00" endTime="2026-10-03T07:56:11.9657342+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb7f68ae-c5ed-466a-8518-db6ec3862d3c" />
+    <UnitTestResult executionId="95953191-43dc-418b-b8cc-b90f2e441f88" testId="6d2529d1-17c4-74dd-8b49-9d11989bb1d3" testName="SonnetDB.CrashTests.CrashReliabilityTests.power_loss_torn_record_ReopenIgnoresTornWalTail" computerName="runnervm8df0l" duration="00:00:00.0426319" startTime="2026-10-03T07:56:12.8641737+00:00" endTime="2026-10-03T07:56:12.9064872+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95953191-43dc-418b-b8cc-b90f2e441f88" />
+    <UnitTestResult executionId="078f69a6-4b7d-4927-b4b7-aaab1296a1bc" testId="c69b76cf-c18e-bebd-fa50-e1cbed3f35a7" testName="SonnetDB.CrashTests.CrashReliabilityTests.crash_kill9_after_delete_DeletedRangeStaysDeleted" computerName="runnervm8df0l" duration="00:00:00.5079572" startTime="2026-10-03T07:56:11.3545140+00:00" endTime="2026-10-03T07:56:11.8539620+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="078f69a6-4b7d-4927-b4b7-aaab1296a1bc" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="SonnetDB.CrashTests.CrashReliabilityTests.crash_kill9_during_fsync_ReopenReplaysOnlyValidWalRecords" storage="/home/runner/work/sonnetdb/sonnetdb/tests/sonnetdb.crashtests/bin/release/net10.0/sonnetdb.crashtests.dll" id="cbacb637-f33d-723f-1062-c8637f0fe42b">
+      <Execution id="7719874a-6c44-4c22-896d-e53a8bb4181f" />
+      <TestMethod codeBase="/home/runner/work/SonnetDB/SonnetDB/tests/SonnetDB.CrashTests/bin/Release/net10.0/SonnetDB.CrashTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SonnetDB.CrashTests.CrashReliabilityTests" name="crash_kill9_during_fsync_ReopenReplaysOnlyValidWalRecords" />
+    </UnitTest>
+    <UnitTest name="SonnetDB.CrashTests.CrashReliabilityTests.oom_protection_memtable_backpressure_HardCapFlushesBeforeUnboundedGrowth" storage="/home/runner/work/sonnetdb/sonnetdb/tests/sonnetdb.crashtests/bin/release/net10.0/sonnetdb.crashtests.dll" id="3ed8f3c2-3284-1a28-63f1-358738d5a81d">
+      <Execution id="fb7f68ae-c5ed-466a-8518-db6ec3862d3c" />
+      <TestMethod codeBase="/home/runner/work/SonnetDB/SonnetDB/tests/SonnetDB.CrashTests/bin/Release/net10.0/SonnetDB.CrashTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SonnetDB.CrashTests.CrashReliabilityTests" name="oom_protection_memtable_backpressure_HardCapFlushesBeforeUnboundedGrowth" />
+    </UnitTest>
+    <UnitTest name="SonnetDB.CrashTests.CrashReliabilityTests.crash_kill9_after_delete_DeletedRangeStaysDeleted" storage="/home/runner/work/sonnetdb/sonnetdb/tests/sonnetdb.crashtests/bin/release/net10.0/sonnetdb.crashtests.dll" id="c69b76cf-c18e-bebd-fa50-e1cbed3f35a7">
+      <Execution id="078f69a6-4b7d-4927-b4b7-aaab1296a1bc" />
+      <TestMethod codeBase="/home/runner/work/SonnetDB/SonnetDB/tests/SonnetDB.CrashTests/bin/Release/net10.0/SonnetDB.CrashTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SonnetDB.CrashTests.CrashReliabilityTests" name="crash_kill9_after_delete_DeletedRangeStaysDeleted" />
+    </UnitTest>
+    <UnitTest name="SonnetDB.CrashTests.CrashReliabilityTests.crash_kill9_os_flushed_writes_AckedWritesSurviveProcessCrash" storage="/home/runner/work/sonnetdb/sonnetdb/tests/sonnetdb.crashtests/bin/release/net10.0/sonnetdb.crashtests.dll" id="939f4755-8654-694a-aa27-8a1c688f8ed8">
+      <Execution id="4a2a1922-929e-4759-86c5-3d90a602238f" />
+      <TestMethod codeBase="/home/runner/work/SonnetDB/SonnetDB/tests/SonnetDB.CrashTests/bin/Release/net10.0/SonnetDB.CrashTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SonnetDB.CrashTests.CrashReliabilityTests" name="crash_kill9_os_flushed_writes_AckedWritesSurviveProcessCrash" />
+    </UnitTest>
+    <UnitTest name="SonnetDB.CrashTests.CrashReliabilityTests.power_loss_half_renamed_segment_PendingReplacementIsIgnoredOnReopen" storage="/home/runner/work/sonnetdb/sonnetdb/tests/sonnetdb.crashtests/bin/release/net10.0/sonnetdb.crashtests.dll" id="719ee9c2-b843-29cb-bb45-ddae30178768">
+      <Execution id="b0994638-b5db-4e2c-9777-d5ccafbe3652" />
+      <TestMethod codeBase="/home/runner/work/SonnetDB/SonnetDB/tests/SonnetDB.CrashTests/bin/Release/net10.0/SonnetDB.CrashTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SonnetDB.CrashTests.CrashReliabilityTests" name="power_loss_half_renamed_segment_PendingReplacementIsIgnoredOnReopen" />
+    </UnitTest>
+    <UnitTest name="SonnetDB.CrashTests.CrashReliabilityTests.crash_kill9_mid_compaction_ReopenDoesNotDuplicateCommittedSegments" storage="/home/runner/work/sonnetdb/sonnetdb/tests/sonnetdb.crashtests/bin/release/net10.0/sonnetdb.crashtests.dll" id="0f349738-363a-8ef0-8a25-a36953b9592a">
+      <Execution id="d56a45d5-3e9d-4690-865a-fa60cdf88c53" />
+      <TestMethod codeBase="/home/runner/work/SonnetDB/SonnetDB/tests/SonnetDB.CrashTests/bin/Release/net10.0/SonnetDB.CrashTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SonnetDB.CrashTests.CrashReliabilityTests" name="crash_kill9_mid_compaction_ReopenDoesNotDuplicateCommittedSegments" />
+    </UnitTest>
+    <UnitTest name="SonnetDB.CrashTests.CrashReliabilityTests.disk_full_during_wal_append_PreservesPreviouslySyncedRecords" storage="/home/runner/work/sonnetdb/sonnetdb/tests/sonnetdb.crashtests/bin/release/net10.0/sonnetdb.crashtests.dll" id="9150857f-c4e4-07c5-0035-9fdc417b3556">
+      <Execution id="5543af66-1205-4a1b-ac6f-be2ba4afabfb" />
+      <TestMethod codeBase="/home/runner/work/SonnetDB/SonnetDB/tests/SonnetDB.CrashTests/bin/Release/net10.0/SonnetDB.CrashTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SonnetDB.CrashTests.CrashReliabilityTests" name="disk_full_during_wal_append_PreservesPreviouslySyncedRecords" />
+    </UnitTest>
+    <UnitTest name="SonnetDB.CrashTests.CrashReliabilityTests.power_loss_torn_record_ReopenIgnoresTornWalTail" storage="/home/runner/work/sonnetdb/sonnetdb/tests/sonnetdb.crashtests/bin/release/net10.0/sonnetdb.crashtests.dll" id="6d2529d1-17c4-74dd-8b49-9d11989bb1d3">
+      <Execution id="95953191-43dc-418b-b8cc-b90f2e441f88" />
+      <TestMethod codeBase="/home/runner/work/SonnetDB/SonnetDB/tests/SonnetDB.CrashTests/bin/Release/net10.0/SonnetDB.CrashTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SonnetDB.CrashTests.CrashReliabilityTests" name="power_loss_torn_record_ReopenIgnoresTornWalTail" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="719ee9c2-b843-29cb-bb45-ddae30178768" executionId="b0994638-b5db-4e2c-9777-d5ccafbe3652" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9150857f-c4e4-07c5-0035-9fdc417b3556" executionId="5543af66-1205-4a1b-ac6f-be2ba4afabfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="939f4755-8654-694a-aa27-8a1c688f8ed8" executionId="4a2a1922-929e-4759-86c5-3d90a602238f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cbacb637-f33d-723f-1062-c8637f0fe42b" executionId="7719874a-6c44-4c22-896d-e53a8bb4181f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f349738-363a-8ef0-8a25-a36953b9592a" executionId="d56a45d5-3e9d-4690-865a-fa60cdf88c53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ed8f3c2-3284-1a28-63f1-358738d5a81d" executionId="fb7f68ae-c5ed-466a-8518-db6ec3862d3c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6d2529d1-17c4-74dd-8b49-9d11989bb1d3" executionId="95953191-43dc-418b-b8cc-b90f2e441f88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c69b76cf-c18e-bebd-fa50-e1cbed3f35a7" executionId="078f69a6-4b7d-4927-b4b7-aaab1296a1bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="8" executed="8" passed="8" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.5+1b188a7b0a (64-bit .NET 10.0.12)
+[xUnit.net 00:00:00.12]   Discovering: SonnetDB.CrashTests
+[xUnit.net 00:00:00.20]   Discovered:  SonnetDB.CrashTests
+[xUnit.net 00:00:00.22]   Starting:    SonnetDB.CrashTests
+[xUnit.net 00:00:03.07]   Finished:    SonnetDB.CrashTests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
